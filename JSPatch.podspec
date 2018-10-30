@@ -18,10 +18,11 @@ Pod::Spec.new do |s|
   s.author             = { "bang" => "bang590@gmail.com" }
   s.social_media_url   = "https://twitter.com/bang590"
 
-  s.ios.deployment_target = '6.0'
+  s.ios.deployment_target = '9.0'
   s.tvos.deployment_target = '9.0'
   s.osx.deployment_target = '10.9'
-  s.source       = { :git => "https://github.com/bang590/JSPatch.git", :tag => s.version }
+  s.source       = { :git => "https://github.com/heiby/JSPatch.git", :tag => s.version }
+  s.prefix_header_contents = '#import "jspatch_confuse.h"'
 
   s.frameworks   = "Foundation"
   s.weak_framework = "JavaScriptCore"
